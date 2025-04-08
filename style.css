@@ -1,0 +1,94 @@
+body,
+html {
+    margin: 5px;
+    font-size: 15px;
+}
+
+#left {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 43%;
+    overflow-y: scroll;
+    z-index: 1;
+    background-color: #F5f5f5
+}
+
+
+#middle {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 43%;
+    overflow-y: scroll;
+    width: 37%;
+    z-index: 1;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    width: 17%;
+    z-index: 1;
+    background-color: aliceblue;
+}
+
+.doto-regular {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 100;
+  }
+
+
+p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 15px;
+    text-align: justify;
+}
+
+.material-box {
+    outline: 1px solid black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.material-box:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.box-label {
+    grid-column: span 3;
+    height: 10px;
+}
+
+.center-box {
+    outline: 1px solid black;
+    height: 80%;
+    text-align: center;
+}
+
+.name-selector {
+    position: fixed;
+    top: 90%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.textbox:hover {
+    cursor: text;
+}
